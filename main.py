@@ -71,7 +71,7 @@ def handle_button_click(call):
         player_data[user_id]['cards'].remove(b1)
         player_data[user_id]['user_cards'].append(a1)
         player_data[user_id]['user_cards'].append(b1)
-
+        print()
         for player in player_balance:
             if player['user_id'] == user_id:
                 player['ba'] -= 20
